@@ -17,3 +17,7 @@
 - Install `Gunicorn`
 `pipenv install gunicorn==19.9.0`
 - Update `settings.py`
+`ALLOWED_HOSTS = ['*']`
+
+**Deployment**
+- `heroku git:remote -a augustine-blog-dj`
