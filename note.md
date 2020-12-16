@@ -7,7 +7,13 @@
 - In a production-ready, static files would typically store on Content Delivery Network (CDN) for better performance.
 
 ## Accounts App
-- Flow: `Sigup -> Login -> Homepage`
+- Flow: `Signup -> Login -> Homepage`
+
+**Sign Up**
+- Signup URL: `accounts/signup/`
+- Login URL: `accounts/login/`
+    - By default Django will look within a templates directory called `registration` for a file called `login.html` for a log in form.
+    - [LoginView](https://docs.djangoproject.com/en/3.0/topics/auth/default/#django.contrib.auth.views.LoginView)
 
 **Heroku Config**
 - Update `Pipfile.lock`
@@ -21,3 +27,4 @@
 
 **Deployment**
 - `heroku git:remote -a augustine-blog-dj`
+- `git push heroku master`
