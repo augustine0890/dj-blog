@@ -10,8 +10,8 @@
 - Flow: `Signup -> Login -> Homepage`
 
 **Sign Up**
-- Signup URL: `accounts/signup/`
-- Login URL: `accounts/login/`
+- Signup URL: `users/signup/`
+- Login URL: `users/login/`
     - By default Django will look within a templates directory called `registration` for a file called `login.html` for a log in form.
     - [LoginView](https://docs.djangoproject.com/en/3.0/topics/auth/default/#django.contrib.auth.views.LoginView)
 
@@ -28,6 +28,8 @@
     - `python manage.py makemigrations users`
     - `python manage.py migrate`
     - `python manage.py createsuperuser` -> user/pw: `augustine/123`
+
+Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
 
 **Heroku Config**
 - Update `Pipfile.lock`
