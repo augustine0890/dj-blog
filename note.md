@@ -1,4 +1,4 @@
-# Blog App Project with Django
+# [Blog App Project with Django](https://augustine-blog-dj.herokuapp.com/)
 
 ## Blog App
 
@@ -6,7 +6,7 @@
 - Static files: CSS, JS, and images
 - In a production-ready, static files would typically store on Content Delivery Network (CDN) for better performance.
 
-## Accounts App
+## Users App
 - Flow: `Signup -> Login -> Homepage`
 
 **Sign Up**
@@ -36,6 +36,16 @@ Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-u
 - Install package `django-crispy-forms`
 `pipenv install django-crispy-forms==1.8.1`
 
+**Password Change and Reset**
+- "Log In" and then navigate to "Change password"
+- Password change URL: 
+    - `users/password_change/`
+    - `users/password_change/done/`
+- Password reset URL: 
+    - `users/password_reset/`
+    - `users/password_reset/done/`
+
+## Deployment
 **Heroku Config**
 - Update `Pipfile.lock`
 `pipenv lock`
