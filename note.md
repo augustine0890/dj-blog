@@ -31,6 +31,11 @@
 
 Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
 
+**Bootstrap**
+- The [starter template](https://getbootstrap.com/docs/4.1/getting-started/introduction/) that includes the basic files needed
+- Install package `django-crispy-forms`
+`pipenv install django-crispy-forms==1.8.1`
+
 **Heroku Config**
 - Update `Pipfile.lock`
 `pipenv lock`
