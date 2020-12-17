@@ -9,15 +9,13 @@
     {% extends 'base.html' %}
 
     {% block content %}
-    {% if user.is_authenticated %}
-        <p>Hi, {{ user.username }}</p>
-        <p><a href="{% url 'logout' %}">Log Out</a></p>
-    {% else %}
-        <p>You are not logged in.</p>
-        <a href="{% url 'login' %}">Log In</a>
-        <a href="{% url 'signup' %}">Sign Up</a>
-    {% endif %}
-
+    <div class="jumbotron">
+        <h1 class="display-4">Blog App</h1>
+        <p class="lead">A Blog website built with Django.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'post_list' %}" role="button">View All Posts</a>
+        </p>
+    </div>
     {% endblock content %}
 </body>
 </html>

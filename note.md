@@ -6,6 +6,11 @@
 - Static files: CSS, JS, and images
 - In a production-ready, static files would typically store on Content Delivery Network (CDN) for better performance.
 
+**Posts**
+- The posts URL: 
+    - `posts/`
+    - `/`
+
 ## Users App
 - Flow: `Signup -> Login -> Homepage`
 
