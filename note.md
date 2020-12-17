@@ -11,7 +11,7 @@
     - `posts/`
     - `/`
 
-## Users App
+## Users App (Authentication and Authorizatioin)
 - Flow: `Signup -> Login -> Homepage`
 
 **Sign Up**
@@ -32,7 +32,7 @@
     - Delete `blog/migrations` and `db.sqlite3`
     - `python manage.py makemigrations users`
     - `python manage.py migrate`
-    - `python manage.py createsuperuser` -> user/pw: `augustine/123`
+    - `python manage.py createsuperuser` -> user/pw: `fitpet1/fitpet123@@`
 
 Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-user-model)
 
@@ -49,6 +49,9 @@ Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-u
 - Password reset URL: 
     - `users/password_reset/`
     - `users/password_reset/done/`
+
+**Permissions and Authorization**
+- If you create a new post (article) and then go into the "All Posts" you will see it automatically set to the current logged-in user.
 
 ## Deployment
 **Heroku Config**
