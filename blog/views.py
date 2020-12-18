@@ -52,4 +52,4 @@ class BlogDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         obj = self.get_object()
-        return obj.author = self.request.user
+        return obj.author == self.request.user
