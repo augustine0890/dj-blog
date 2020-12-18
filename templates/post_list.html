@@ -28,11 +28,18 @@
                     <span class="text-muted">by {{ post.author }} | {{ post.date|date }} {{ post.date|time:"H:i"}}</span>
                 </div>
                 <div class="card-body">
-                    {{ post.body }}
-                </div>
-                <div class="card-footer text-center text-muted">
+                    <p>{{ post.body }}</p>
                     <a href="{% url 'post_edit' post.pk %}">Edit</a> | 
                     <a href="{% url 'post_delete' post.pk %}">Delete</a>
+                </div>
+
+                <div class="card-footer">
+                    {% for comment in post.comments.all %}
+                    <p>
+                        <span class="font-weight-bold">{{ comment.author }} &middot;</span>
+                        {{ comment }}
+                    </p>
+                    {% endfor %}
                 </div>
             </div>
             <br />
