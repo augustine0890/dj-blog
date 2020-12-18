@@ -53,6 +53,9 @@ Reference: [Custom User Model](https://learndjango.com/tutorials/django-custom-u
 **Permissions and Authorization**
 - If you create a new post (article) and then go into the "All Posts" you will see it automatically set to the current logged-in user.
 - Restrict view access to only logged in users.
+- Restrict any logged in user can make changes to any post. Allow only the author of a post has this permission.
+
+Reference: [UserPassesTestMixin](https://docs.djangoproject.com/en/3.0/topics/auth/default/#django.contrib.auth.mixins.UserPassesTestMixin)
 
 ## Deployment
 **Heroku Config**
