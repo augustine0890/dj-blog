@@ -1,4 +1,4 @@
-# [Blog App Project with Django](https://augustine-blog-dj.herokuapp.com/)
+# [Blog App Project with Django](https://augustine-blog-dj.herokuapp.com/?target=_blank)
 
 ## Blog App
 
