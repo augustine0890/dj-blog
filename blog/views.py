@@ -8,13 +8,17 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
 from .models import Post
+from django_filters.views import FilterView
+from .filters import PostFilter
 
 
-class BlogListView(LoginRequiredMixin, ListView):
+class BlogListView(LoginRequiredMixin, FilterView):
     model = Post
     template_name = 'post_list.html'
     login_url = 'login'
 
+    filterset_class = PostFilter
+    strict = False
 
 class BlogDetailView(LoginRequiredMixin, DetailView):
     model = Post
